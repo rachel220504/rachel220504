@@ -1,0 +1,106 @@
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        
+      }
+.banner {
+  background-color: #000000; /* Couleur de fond de la bannière */
+  color: #fafafa; /* Couleur du texte de la bannière */
+  padding: 10px; /* Espacement intérieur de la bannière */
+}
+
+.content {
+  /* Styles pour le contenu principal (sous la bannière) */
+}
+
+      header {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+      nav {
+        background-color: #000000;
+        border: 1px solid #000000;
+        padding: 10px;
+        overflow: hidden;
+      }
+      nav a {
+        display: block;
+        float: left;
+        padding: 10px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #000000;
+      }
+      section {
+        margin: 20px;
+      }
+      article {
+        border: 1px solid #000000;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-top: 0;
+      }
+img {
+width : 300px;
+height : 300px;
+  positionh : left; 
+}
+      footer {
+        background-color: #000000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+.parallax-container {
+  height: 500px; /* Hauteur du conteneur de parallaxe */
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+.parallax-item {
+  height: 100%; /* Hauteur du contenu de parallaxe */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.parallax');
+  var instances = M.Parallax.init(elems);
+});
+.marquee-container {
+  width: 100%; /* Largeur du conteneur de défilement */
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content span {
+  margin-right: 50px; /* Espacement entre chaque élément */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
